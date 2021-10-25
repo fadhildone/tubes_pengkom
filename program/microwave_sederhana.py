@@ -13,27 +13,27 @@ penghangat = {"Program": "none", "Temperatur":"none"}
 def aktifkan_penghangat(penghangat, N):
     if N == 1:
         penghangat["Program"] = "Program Penghangat Sop"
-        penghangat["Temperatur"] = "75 Celsius"
+        penghangat["Temperatur"] = "75° Celsius"
         return penghangat
     elif N == 2:
         penghangat["Program"] = "Program Penghangat Rendang"
-        penghangat["Temperatur"] =  " 75 Celsius"
+        penghangat["Temperatur"] =  " 75° Celsius"
         return penghangat
     elif N == 3:
         penghangat["Program"] = "Program Penghangat Pizza"
-        penghangat["Temperatur"] = "75 Celsius"
+        penghangat["Temperatur"] = "75° Celsius"
         return penghangat
     elif N == 4:
         penghangat["Program"] = "Program Penghangat Ayam Goreng"
-        penghangat["Temperatur"] = "75 Celsius"
+        penghangat["Temperatur"] = "75° Celsius"
         return penghangat
     elif N == 5:
         penghangat["Program"] = "Program Penghangat Spagetthi"
-        penghangat["Temperatur"] = "75 Celsius"
+        penghangat["Temperatur"] = "75° Celsius"
         return penghangat
     elif N == 6:
         penghangat["Program"] = "Program Penghangat Minuman Hangat"
-        penghangat["Temperatur"] = "75 Celsius"
+        penghangat["Temperatur"] = "75° Celsius"
         return penghangat
 def konverter_Fahrenheit_suhu(suhu):
     if suhu == "Celsius" :
@@ -121,8 +121,7 @@ def konverter_Reamor_skalar(suhu, skalar_suhu):
         skalar_suhu = ((skalar_suhu-273) * 4 / 5)
         return skalar_suhu
 
-def waktu(waktu_menit,waktu_detik):
-    print(f"{waktu_menit:.2f}:{waktu_detik:.2f}")
+
 while True:
     print (jam)
     print ("Nyalakan microwave (Y/N) ? ")
@@ -132,6 +131,7 @@ while True:
         print ("Microwave nyala\n")
         break
     elif perintah == "N":
+        sistem = "off"
         print ("Microwave mati")
         break
     else:
@@ -331,6 +331,7 @@ while sistem == "on" :
                 print ("6. 20 menit")
                 print ("7. 30 menit")
                 print ("8. Masukkan secara manual")
+                print ("9. Kembali")
                 print ("Pilih opsi timer yang ada:")
                 perintah_3 = int(input())
                 if perintah_3 == 1:
@@ -366,6 +367,8 @@ while sistem == "on" :
                     waktu_detik = int(input("Masukkan detik: "))
                     print(f"timer anda adalah {waktu_menit} menit {waktu_detik} detik")
                     break
+                elif perintah_3 == 9:
+                    break
                 else:
                     print ("Masukkan tidak valid")
 
@@ -393,7 +396,6 @@ while sistem == "on" :
                     waktu_menit = 5
                     waktu_detik = 0
                     fungsi = "Clean by Steaming"
-                    jam = "\njam : 12.00\n "
                     nama = "none"
                     keep_warm = "off"
                     print("Fungsi microwave diubah menjadi Clean by Steaming\nMembersihkan makanan dengan metode steaming")
@@ -465,7 +467,8 @@ while sistem == "on" :
                     else:
                         print(jam)
                         print("Masukkan tidak valid")
-
+                elif perintah_4 == 4:
+                    break
                 else:
                     print ("Masukkan tidak valid")
 
@@ -504,7 +507,6 @@ while sistem == "on" :
         print(f"Timer {waktu_menit}:{waktu_detik}")
         print(f"mode : {mode}")
         print(f"fungsi: {fungsi}\n")
-
         print("Silahkan pilih menu yang anda inginkan: ")
         print("1. Atur mode")
         print("2. Reset Program")
