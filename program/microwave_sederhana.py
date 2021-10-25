@@ -136,7 +136,7 @@ while True:
         break
     else:
         print ("Masukkan tidak valid")
-        break
+
 
 while sistem == "on" :
     if keep_warm == "off":
@@ -155,6 +155,7 @@ while sistem == "on" :
         print ("6. Matikan")
         menu = int(input("Masukkan menu yang anda inginkan: "))
         if menu == 1:
+            fungsi = "normal"
             while True:
                 print (jam)
                 print ("\nSilahkan pilih satuan yang anda inginnkan: ")
@@ -192,7 +193,7 @@ while sistem == "on" :
                     break
                 else:
                     print ("Masukkan tidak valid")
-                    break
+
             while suhu == "Celsius" or suhu == "Kelvin" or suhu == "Reamor" or suhu == "Fahrenheit":
                  print (jam)
                  print ("Apakah anda ingin mengganti besaran temperatur (Y/N)?\n")
@@ -282,6 +283,8 @@ while sistem == "on" :
                          elif ubah == 4:
                              print ("temperatur tidak diubah")
                              break
+                         else:
+                             print ("Masukkan tidak valid")
                      while suhu == "Kelvin":
                          print (jam)
                          print ("Silahkan pilih tujuan temperatur")
@@ -309,11 +312,14 @@ while sistem == "on" :
                          elif ubah == 4:
                              print ("temperatur tidak diubah")
                              break
+                         else:
+                             print("Masukkan tidak valid")
                      break
                  else:
                      print ("Masukkan tidak valid")
-                     break
+
         elif menu == 2:
+            fungsi = "normal"
             while True:
                 print (jam)
                 print ("Pilih timer yang ada:  ")
@@ -362,7 +368,8 @@ while sistem == "on" :
                     break
                 else:
                     print ("Masukkan tidak valid")
-                    break
+
+
 
 
         elif menu == 3:
@@ -402,6 +409,7 @@ while sistem == "on" :
                     print ("4. Ayam Goreng")
                     print ("5. Spagetthi")
                     print ("6. Minuman Hangat")
+                    print ("7. Kembali")
                     print ("Silahkan masukkan pilihan anda: ")
                     N = int(input())
                     if N == 1:
@@ -457,10 +465,10 @@ while sistem == "on" :
                     else:
                         print(jam)
                         print("Masukkan tidak valid")
-                        break
+
                 else:
                     print ("Masukkan tidak valid")
-                    break
+
 
         elif menu == 4:
             skalar_suhu = 0
@@ -595,10 +603,10 @@ while sistem == "on" :
                     else:
                         print(jam)
                         print("Masukkan tidak valid")
-                        break
+
                 else:
                     print("Masukkan tidak valid")
-                    break
+
 
         elif menu == 2:
             skalar_suhu = 0
