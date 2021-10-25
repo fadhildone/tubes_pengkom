@@ -596,6 +596,7 @@ while sistem == "on":
             print(f"mode : {mode}\n")
             break
         elif menu == 6:
+            print(jam)
             print("\nmicrowave dimatikan")
             sistem = "off"
             break
@@ -1025,7 +1026,7 @@ while sistem == "on":
             if perintah_7 ==  1:
                 print(jam)
                 print(f"\nProgram {program_1.nama} dijalankan")
-                print(f"mode : {mode}")
+                print(f"mode : {program_1.mode}")
                 print(f"Temperatur sebesar {program_1.skalar_suhu} derajat {program_1.suhu}")
                 print("Timer adalah: ", end='')
                 program_1.waktu()
@@ -1033,7 +1034,7 @@ while sistem == "on":
             elif perintah_7 == 2:
                 print(jam)
                 print(f"\nProgram {program_2.nama} dijalankan")
-                print(f"mode : {mode}")
+                print(f"mode : {program_2.mode}")
                 print(f"Temperatur sebesar {program_2.skalar_suhu} derajat {program_2.suhu}")
                 print("Timer adalah: ", end='')
                 program_2.waktu()
@@ -1041,7 +1042,7 @@ while sistem == "on":
             elif perintah_7 == 3:
                 print(jam)
                 print(f"\nProgram {program_3.nama} dijalankan")
-                print (f"mode : {mode}")
+                print (f"mode : {program_3.mode}")
                 print(f"Temperatur sebesar {program_3.skalar_suhu} derajat {program_3.suhu}")
                 print("Timer adalah: ", end='')
                 program_3.waktu()
