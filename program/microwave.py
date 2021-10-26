@@ -164,7 +164,7 @@ while True:
         break
     else:
         print("Masukkan tidak valid")
-        break
+
 
 while sistem == "on":
     if len(list_program) == 0:
@@ -225,7 +225,7 @@ while sistem == "on":
                 else:
                     print(jam)
                     print("Masukkan tidak valid")
-                    break
+
             while suhu == "Celsius" or suhu == "Kelvin" or suhu == "Reamor" or suhu == "Fahrenheit":
                 print(jam)
                 print("Apakah anda ingin mengganti besaran temperatur (Y/N)?\n")
@@ -269,7 +269,7 @@ while sistem == "on":
                         else:
                             print(jam)
                             print ("Masukkan tidak valid")
-                            break
+
                     while suhu == "Fahrenheit":
                         print(jam)
                         print("Silahkan pilih tujuan temperatur")
@@ -304,7 +304,7 @@ while sistem == "on":
                         else:
                             print(jam)
                             print ("Masukkan tidak valid")
-                            break
+
                     while suhu == "Reamor":
                         print(jam)
                         print("Silahkan pilih tujuan temperatur")
@@ -339,7 +339,7 @@ while sistem == "on":
                         else:
                             print(jam)
                             print ("Masukkan tidak valid")
-                            break
+
                     while suhu == "Kelvin":
                         print(jam)
                         print("Silahkan pilih tujuan temperatur")
@@ -374,12 +374,12 @@ while sistem == "on":
                         else:
                             print(jam)
                             print ("Masukkan tidak valid")
-                            break
-                    break
+
+
                 else:
                     print(jam)
                     print("Masukkan tidak valid")
-                    break
+
         elif menu == 2:
             while True:
                 print(jam)
@@ -438,7 +438,7 @@ while sistem == "on":
                 else:
                     print(jam)
                     print ("Masukkan tidak valid")
-                    break
+
 
 
         elif menu == 3:
@@ -525,13 +525,13 @@ while sistem == "on":
                     else:
                         print (jam)
                         print ("Masukkan tidak valid")
-                        break
+
                 elif perintah_4 == 4:
                     break
                 else:
                     print(jam)
                     print ("Masukkan tidak valid")
-                    break
+
 
         elif menu == 4:
             while True:
@@ -814,7 +814,7 @@ while sistem == "on":
                 else:
                     print(jam)
                     print("Masukkan tidak valid")
-                    break
+
         elif menu == 2:
             while True:
                 print(jam)
@@ -873,7 +873,7 @@ while sistem == "on":
                 else:
                     print(jam)
                     print("Masukkan tidak valid")
-                    break
+
 
 
         elif menu == 3:
@@ -957,13 +957,13 @@ while sistem == "on":
                     else:
                         print(jam)
                         print("Masukkan tidak valid")
-                        break
+
                 elif perintah_4 == 4:
                     break
                 else:
                     print(jam)
                     print ("Masukkan tidak valid")
-                    break
+
 
         elif menu == 4:
             while True:
@@ -1018,7 +1018,7 @@ while sistem == "on":
                 else:
                     print(jam)
                     print("masukkan tidak valid")
-                    break
+
         elif menu == 5:
             print(jam)
             print (f"Program yang tersedia adalah: \n{list_program}\n\nTekan \"B\" untuk Kembali\n\nSilahkan masukkan pilihan anda:")
@@ -1052,7 +1052,7 @@ while sistem == "on":
             else:
                 print(jam)
                 print ("Masukkan tidak valid")
-                break
+                
 
 
 
